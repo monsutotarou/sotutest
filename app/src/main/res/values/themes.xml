@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="Theme.App.Starting" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">@android:color/white</item>
+
+        <item name="windowSplashScreenAnimatedIcon">@drawable/ic_splash_logo</item>
+
+        <item name="postSplashScreenTheme">@style/Theme.Sotutest</item>
+    </style>
+    <style name="Base.Theme.Sotutest" parent="Theme.Material3.DayNight.NoActionBar">
+    </style>
+
+    <style name="Theme.Sotutest" parent="Base.Theme.Sotutest" />
+
+</resources>
