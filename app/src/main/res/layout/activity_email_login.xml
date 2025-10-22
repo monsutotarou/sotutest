@@ -7,19 +7,23 @@
     tools:context=".EmailLoginActivity">
 
     <!-- 背景画像（LoginActivityと同じものを設定） -->
-    <ImageView
-        android:id="@+id/backgroundImageView"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:src="@drawable/background_with_logo"
-        android:scaleType="centerCrop"
-        android:contentDescription="背景画像"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
     <!-- 画面タイトルのようなテキスト -->
+
+    <ImageView
+        android:id="@+id/backgroundImageView"
+        android:layout_width="1053dp"
+        android:layout_height="1866dp"
+        android:contentDescription="背景画像"
+        android:scaleType="centerCrop"
+        android:src="@drawable/background_with_logo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.13"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.91" />
+
     <TextView
         android:id="@+id/titleTextView"
         android:layout_width="wrap_content"
