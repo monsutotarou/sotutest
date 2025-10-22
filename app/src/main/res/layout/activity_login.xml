@@ -51,7 +51,7 @@
         android:id="@+id/googleLoginButton"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="GOOGLEアカウントで登録/ログイン"
+        android:text="GOOGLEアカウントで登録/"
         android:textColor="@android:color/black"
         android:backgroundTint="#E0E0E0"
         app:cornerRadius="24dp"
