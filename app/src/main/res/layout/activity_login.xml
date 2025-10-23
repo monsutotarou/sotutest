@@ -30,30 +30,32 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0" />
 
+    <!-- Google Account Login Button (Above Guest) -->
+
     <com.google.android.material.button.MaterialButton
         android:id="@+id/guestLoginButton"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="ゲストログイン"
-        android:textColor="@android:color/black"
-        android:backgroundTint="@android:color/white"
-        app:cornerRadius="24dp"
         android:layout_marginStart="48dp"
         android:layout_marginEnd="48dp"
-        android:layout_marginBottom="32dp"
+        android:layout_marginBottom="152dp"
+        android:backgroundTint="@android:color/white"
         android:padding="16dp"
+        android:text="ゲストログイン"
+        android:textColor="@android:color/black"
+        app:cornerRadius="24dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
 
-    <!-- Google Account Login Button (Above Guest) -->
     <com.google.android.material.button.MaterialButton
         android:id="@+id/googleLoginButton"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="GOOGLEアカウントで登録/ログイン"
         android:textColor="@android:color/black"
-        android:backgroundTint="#E0E0E0"
+        android:backgroundTint="@android:color/white"
         app:cornerRadius="24dp"
         android:layout_marginStart="48dp"
         android:layout_marginEnd="48dp"
