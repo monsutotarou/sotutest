@@ -10,23 +10,33 @@
     android:id="@+id/main">
 
 
-    <EditText
-        android:id="@+id/editTextEmail"
-        android:layout_width="0dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="48dp"
-        android:layout_marginEnd="48dp"
-        android:background="@drawable/rounded_edittext_bg"
-        android:hint="メールアドレス"
-        android:inputType="textEmailAddress"
-        android:paddingStart="16dp"
-        android:paddingEnd="16dp"
-        app:layout_constraintBottom_toTopOf="@+id/editTextPassword"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+    <ImageButton
+        android:id="@+id/buttonBack"
+        android:layout_width="66dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription="戻る"
+        android:src="@drawable/outline_arrow_back_24"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_chainStyle="packed" />
+        app:tint="#404040" /> <EditText
+    android:id="@+id/editTextEmail"
+    android:layout_width="0dp"
+    android:layout_height="50dp"
+    android:layout_marginStart="48dp"
+    android:layout_marginEnd="48dp"
+    android:background="@drawable/rounded_edittext_bg"
+    android:hint="メールアドレス"
+    android:inputType="textEmailAddress"
+    android:paddingStart="16dp"
+    android:paddingEnd="16dp"
+    app:layout_constraintBottom_toTopOf="@+id/editTextPassword"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_chainStyle="packed" />
 
     <EditText
         android:id="@+id/editTextPassword"

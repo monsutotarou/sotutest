@@ -13,4 +13,8 @@
 
     <style name="Theme.Sotutest" parent="Base.Theme.Sotutest" />
 
+    <style name="Widget.App.BottomNavigationView.NoIndicator" parent="Widget.Material3.BottomNavigationView">
+        <item name="itemActiveIndicatorColor">@android:color/transparent</item>
+    </style>
+
 </resources>
