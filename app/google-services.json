@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "272904974723",
+    "project_id": "sotutest",
+    "storage_bucket": "sotutest.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:272904974723:android:0405c65325c576daacc6b6",
+        "android_client_info": {
+          "package_name": "com.example.sotutest"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "272904974723-jqan0leb33r02bl643t6vfn5kufc8q82.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.sotutest",
+            "certificate_hash": "d294127586282fa33313e5946c8a606c54e70e9d"
+          }
+        },
+        {
+          "client_id": "272904974723-t7tv8vama1hfdgunkqtbhpgtg330h42p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDaPVWVzWDHiqMMsHypLEidd27LmWf-O64"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "272904974723-t7tv8vama1hfdgunkqtbhpgtg330h42p.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -38,8 +38,11 @@ class LoginActivity : AppCompatActivity() {
 
         // 5. 「Googleログイン」ボタンがクリックされたときの動作（現在は未実装のメッセージ表示）
         googleLoginButton.setOnClickListener {
-            // TODO: 今後、Googleログインの機能をここに実装します
-            Toast.makeText(this, "Googleログインは未実装です", Toast.LENGTH_SHORT).show()
+            // GoogleLoginActivity を開くための「Intent」を作成します
+            val intent = Intent(this, GoogleLoginActivity::class.java)
+
+            // Intentを使って新しい画面を開きます
+            startActivity(intent)
         }
 
         // 6. 「ゲストログイン」ボタンがクリックされたときの動作（現在は未実装のメッセージ表示）

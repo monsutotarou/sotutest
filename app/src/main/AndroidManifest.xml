@@ -10,30 +10,27 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.App.Starting"> <!-- アプリ全体のテーマはスプラッシュ用でOK -->
-
+        android:theme="@style/Theme.App.Starting">
+        <activity
+            android:name=".GoogleLoginActivity"
+            android:exported="false" />
+        <!-- アプリ全体のテーマはスプラッシュ用でOK -->
         <activity
             android:name=".MainActivity"
-            android:exported="true">
-        </activity>
-
-        <!-- LoginActivityはアプリ全体のテーマをそのまま使う -->
+            android:exported="true"></activity> <!-- LoginActivityはアプリ全体のテーマをそのまま使う -->
         <activity
             android:name=".LoginActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
-
-        <!-- ★EmailLoginActivityにだけ、個別のテーマを指定する -->
+        </activity> <!-- ★EmailLoginActivityにだけ、個別のテーマを指定する -->
         <activity
             android:name=".EmailLoginActivity"
             android:exported="true"
-            android:theme="@style/Theme.Sotutest" /> <!-- ★この行を追加しました -->
-
+            android:theme="@style/Theme.Sotutest" />
     </application>
 
 </manifest>
-
