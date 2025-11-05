@@ -33,7 +33,7 @@
     <!-- Google Account Login Button (Above Guest) -->
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/guestLoginButton"
+        android:id="@+id/registerButton"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="48dp"
@@ -41,7 +41,7 @@
         android:layout_marginBottom="152dp"
         android:backgroundTint="@android:color/white"
         android:padding="16dp"
-        android:text="ゲストログイン"
+        android:text="アカウント登録"
         android:textColor="@android:color/black"
         app:cornerRadius="24dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -53,7 +53,7 @@
         android:id="@+id/googleLoginButton"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="GOOGLEアカウントで登録/ログイン"
+        android:text="Googleアカウントでログイン"
         android:textColor="@android:color/black"
         android:backgroundTint="@android:color/white"
         app:cornerRadius="24dp"
@@ -61,16 +61,15 @@
         android:layout_marginEnd="48dp"
         android:layout_marginBottom="16dp"
         android:padding="16dp"
-        app:layout_constraintBottom_toTopOf="@id/guestLoginButton"
+        app:layout_constraintBottom_toTopOf="@id/registerButton"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
-    <!-- Email Login Button (Above Google) -->
     <com.google.android.material.button.MaterialButton
         android:id="@+id/emailLoginButton"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="メールアドレスで登録/ログイン"
+        android:text="メールアドレスでログイン"
         android:textColor="@android:color/black"
         android:backgroundTint="@android:color/white"
         app:cornerRadius="24dp"
