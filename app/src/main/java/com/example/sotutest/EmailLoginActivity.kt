@@ -32,7 +32,6 @@ class EmailLoginActivity : AppCompatActivity() {
         val emailEditText: EditText = findViewById(R.id.editTextEmail)
         val passwordEditText: EditText = findViewById(R.id.editTextPassword)
         val loginButton: Button = findViewById(R.id.buttonLogin)
-        val registerText: TextView = findViewById(R.id.textViewRegister)
         val forgotPasswordText: TextView = findViewById(R.id.textViewForgotPassword) // (※もしあれば)
         val backButton: ImageButton = findViewById(R.id.buttonBack)
 
@@ -74,37 +73,7 @@ class EmailLoginActivity : AppCompatActivity() {
                 }
         }
 
-        // --- 2. アカウント登録テキストが押された時の処理 ---
-        registerText.setOnClickListener {
-            val email = emailEditText.text.toString()
-            val password = passwordEditText.text.toString()
 
-            // 入力が空でないかチェック
-            if (email.isEmpty() || password.isEmpty()) {
-                Toast.makeText(this, "メールアドレスとパスワードを入力してください", Toast.LENGTH_SHORT).show()
-                return@setOnClickListener // 処理を中断
-            }
-
-            // Firebaseで新規登録
-            auth.createUserWithEmailAndPassword(email, password)
-                .addOnCompleteListener(this) { task ->
-                    if (task.isSuccessful) {
-                        // 登録成功
-                        Toast.makeText(this, "アカウントを登録しました", Toast.LENGTH_SHORT).show()
-
-                        // 登録成功時もHomeActivityへの遷移は一旦コメントアウト
-                        /*
-                        val intent = Intent(this, HomeActivity::class.java)
-                        startActivity(intent)
-                        finish()
-                        */
-
-                    } else {
-                        // 登録失敗 (パスワードが短い、メール形式が不正、既に登録済みなど)
-                        Toast.makeText(this, "登録に失敗しました: ${task.exception?.message}", Toast.LENGTH_LONG).show()
-                    }
-                }
-        }
 
         // --- 3. 戻るボタンが押された時の処理 ---
         backButton.setOnClickListener {
